@@ -1,9 +1,15 @@
 0x19. C - Stacks, Queues - LIFO, FIFO
+
 In this project, we created a simple interpreter for Monty ByteCodes. The interpreter reads a bytecode file and executes the bytecode commands.
+
 The Monty language
+
 Monty 0.98 is a scripting language that is first compiled into Monty byte codes (Just like Python). It relies on a unique stack, with specific instructions to manipulate it. The goal of this project is to create an interpreter for Monty ByteCodes files.
+
 Monty byte code files 
+
 Files containing Monty byte codes usually have the .m extension. Most of the industry uses this standard but it is not required by the specification of the language. There is not more than one instruction per line. There can be any number of spaces before or after the opcode and its argument:
+
 Objectives: 
 To know what LIFO and FIFO mean 
 To know what a stack is, and when to use it 
@@ -11,13 +17,17 @@ To know what a queue is, and when to use it
 To know the common implementations of stacks and queues 
 To know the most common use cases of stacks and queues 
 To know the proper way to use global variables
+
 Environment 
 Ubuntu 14.04 LTS via Vagrant in VirtualBox and compiled with GCC version 4.8.4
+
 Instructions Resources
 Read or watch:
 . Google 
 . Create dynamic libraries on Linux
+
 Requirements project
+
 Allowed editors: vi, vim, emacs
 All your files will be compiled on Ubuntu 14.04 LTS
 SimpleYour programs and functions will be compiled with gcc 4.8.4 using the flags -Wall -Werror -Wextra and -pedantic
@@ -34,8 +44,11 @@ You are expected to do the tasks in the order shown in the project
 
 
 Instructions basics
+
 Compiling the program: gcc -Wall -Werror -Wextra -pedantic *.c -o monty
+
  File Monty:
+
 julien@ubuntu:~/monty$ cat -e bytecodes/000.m
 push 0$
 push 1$
@@ -66,6 +79,7 @@ typedef struct instruction_s
 
 
 Example
+
 vagrant@vagrant-ubuntu-trusty-64:~/monty$ cat bytecodes/00.m
 push 1
 push 2
@@ -77,11 +91,12 @@ vagrant@vagrant-ubuntu-trusty-64:~/monty$ ./monty bytecodes/00.m
 2
 1
 vagrant@vagrant-ubuntu-trusty-64:~/monty$
+
 Tasks
+
 0. push, pall
 
-
-    push, pall The push opcode -The opcode push pushes an element to the stack. The pall opcode -The opcode pall prints all the values on the stack, starting from the top of the stack.
+push, pall The push opcode -The opcode push pushes an element to the stack. The pall opcode -The opcode pall prints all the values on the stack, starting from the top of the stack.
      pint The pint opcode
 The opcode pint prints the value at the top of the stack, followed by a new line. The pint opcode
 
@@ -143,4 +158,5 @@ Read the two digits from stdin, multiply them, and print the result The result o
 
 19. Multiplication level up Multiply two digits given by the user.
 
+# monty
 # monty
